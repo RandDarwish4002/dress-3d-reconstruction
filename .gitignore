@@ -1,0 +1,22 @@
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Python environments
+venv/
+env/
+
+# Large model files
+*.ckpt
+*.pth
+*.safetensors
+*.pt
+
+# Generated data
+output/*
+!output/.gitkeep
+
+# Temporary files
+*.tmp
+*.cache
