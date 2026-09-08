@@ -20,3 +20,6 @@ output/*
 # Temporary files
 *.tmp
 *.cache
+
+# TripoSR source (runtime only)
+triposr/
