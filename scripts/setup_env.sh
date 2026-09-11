@@ -20,8 +20,11 @@ echo "🔧 Installing PyTorch (CUDA 12.1 build) ..."
 echo "🔧 Installing project dependencies ..."
 "$PY" -m pip install -r "$PROJECT_DIR/requirements.txt"
 
+echo "🔧 Installing torchmcubes build backend ..."
+"$PY" -m pip install scikit-build-core cmake ninja pybind11
+
 echo "🔧 Installing torchmcubes ..."
-"$PY" -m pip install "git+https://github.com/tatsy/torchmcubes.git"
+"$PY" -m pip install --no-build-isolation "git+https://github.com/tatsy/torchmcubes.git"
 
 echo "🔧 Cloning TripoSR ..."
 if [ ! -d "$PROJECT_DIR/triposr" ]; then
