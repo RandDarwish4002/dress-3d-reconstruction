@@ -1,21 +1,22 @@
-
 transformers==4.36.2
 tokenizers==0.15.2
 huggingface_hub==0.20.3
-omegaconf==2.3.0
-einops==0.7.0
-trimesh==4.0.5
-xatlas==0.0.9
-moderngl==5.10.0
+omegaconf==2.3.1
+einops==0.8.2
+trimesh==5.1.0
+xatlas==0.0.11
+moderngl==5.12.0
 Pillow==10.1.0
 numpy
 scipy
 scikit-image
-PyMCubes
-rembg
-onnxruntime
 tqdm
 imageio
 imageio-ffmpeg
 opencv-python-headless
 pygltflib
+rembg==2.0.84
+onnxruntime
+
+# Note: torch / torchvision are installed separately in scripts/setup_env.sh
+# with the correct CUDA index URL, and torchmcubes is installed from GitHub.
